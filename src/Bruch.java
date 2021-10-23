@@ -20,7 +20,7 @@ public class Bruch {
 
     //Methode liefert den Bruch als Dezimalwert zurück
     public double toDecimal() {
-        return (double)numerator / (double)denominator;
+        return (double)denominator / (double)numerator;
     }
 
     public String print() {
