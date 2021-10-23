@@ -2,14 +2,18 @@ public class Bruch {
     private int numerator; // Zähler
     private int denominator; // Nenner
 
+    //Erstellt eine neue Instanz von Bruch
     public Bruch(int numerator, int denominator) {
-        // TODO: Setzen Sie die Attribute entsprechend
+        this.numerator = numerator;
+        this.denominator = denominator;
     }
 
+    //Nenner
     public int getNumerator() {
         return numerator;
     }
 
+    //Zähler
     public int getDenominator() {
         return denominator;
     }
