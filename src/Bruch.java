@@ -25,25 +25,18 @@ public class Bruch {
 
     //Methode liefert den Bruch als Text zurück. Format: Z / N
     public String print() {
-        return String.format("%d / %d",denominator,numerator);
+        return String.format("%d / %d",numerator,denominator);
     }
 
     public Bruch multiplicate(Bruch b2) {
-        /* TODO:
-        *  Erstellen Sie für das Ergebnis eine neue Bruch-Variable
-        *   => Übergeben Sie im Konstruktur für numerator den
-        *       eigenen numerator multipliziert mit b2.getNumerator()
-        *   => Selbige auch für denominator
-        *  Retournieren Sie ihre neue Bruch-Variable
-        * */
+        var zaehler = this.denominator * b2.getDenominator();
+        var nenner = this.numerator * b2.getNumerator();
 
-
-        return null;
+        return new Bruch(nenner,zaehler);
     }
 
     public Bruch multiplicate(Bruch b2,  Bruch b3) {
-        // TODO: Multiplizieren Sie den eigenen Bruch mit b2 und b3
-
-        return null;
+        var bruch = b2.multiplicate((b3));
+        return bruch.multiplicate(this);
     }
 }
