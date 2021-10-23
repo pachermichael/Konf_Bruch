@@ -23,9 +23,9 @@ public class Bruch {
         return (double)denominator / (double)numerator;
     }
 
+    //Methode liefert den Bruch als Text zurück. Format: Z / N
     public String print() {
-        // TODO: Die Methode soll den Bruch als Text retournieren z.B.: "5 / 7"
-        return "";
+        return String.format("%d / %d",denominator,numerator);
     }
 
     public Bruch multiplicate(Bruch b2) {
