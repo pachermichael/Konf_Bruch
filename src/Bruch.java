@@ -18,10 +18,9 @@ public class Bruch {
         return denominator;
     }
 
+    //Methode liefert den Bruch als Dezimalwert zurück
     public double toDecimal() {
-        // TODO: Die Methode soll den Dezimalwert zum Bruch retournieren
-        // Achtung: Ganzzahldivision!
-        return 0;
+        return (double)numerator / (double)denominator;
     }
 
     public String print() {
